@@ -1,0 +1,215 @@
+/**********************
+font-family: 'Playfair Display', sans-serif; - nav links and titles
+font-family: 'Raleway', sans-serif; - rest of content 
+***********************/
+
+* {
+ box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    color: #090c12;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+}
+
+ul{
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #090c12;
+}
+
+ul a:hover{
+    text-decoration: underline;
+}
+
+.mainNav ul{
+    font-family: 'Playfair Display', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    color: #2c6a75;
+    font-size: 1em;
+}
+
+.mainHeader{
+    height: 200px;
+    text-align: center;
+    background-color: #dfe7e8;
+}
+
+h2 {
+    color: #2c6a75;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+ul a{
+    color:#2c6a75;
+}
+
+.local, 
+.otherOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+.otherOptions{
+    width: 80%;
+    align-items:center;
+    margin: auto;
+}
+
+
+.local_1{
+    padding-right: 30px;
+}
+.local_1 li {
+    padding-top: 10px;
+}
+
+.alternatives {
+    
+   } 
+.alternativesPic {
+   
+}
+.alternativesList{
+    list-style: circle;
+}
+
+.diaperServices {
+    background-color: #dfe7e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.servicesSub{
+    display: flex;
+    flex-direction: row;
+}
+.serviceIntro, 
+.servicePic,
+.serviceContent {
+    padding: 0 30px;
+}
+
+.diaperPic{
+    display: flex;
+    align-items: center;
+}
+.diaperServicePic{
+    display: flex;
+    align-items: center;
+}
+
+.whyCloth{
+    display: flex;
+    flex-direction: column;
+    background-color:#dfe7e8;
+    border-bottom: #2c6a75 3px solid;
+}
+.chooseCloth h2, p{
+    text-align: center;
+}
+.chooseCloth{
+    width: 70%;
+    margin: auto;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 0;
+}
+
+
+
+
+button{
+    padding: 5px;
+    margin-left: 8px;
+    color: white;
+    background-color: #2c6a75;
+    border-radius:5px;
+}
+
+#amp, #treehugger, #bb{
+    display: none;
+}
+.hasButton{
+    text-align: center;
+}
+#a1, #a2, #a3, #a4, #a5, #a6{
+    display: none;
+}
+.trivia{
+    font-weight: bold;
+}
+
+/*****************************************
+MEDIA QUERIES
+******************************************/
+@media (max-width: 700px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        }
+    .nav li {
+        padding-bottom: 15px;
+    }
+    h2{
+        text-align: center;
+    }
+    .local
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicesSub{
+        flex-direction: column;
+    }
+    .diaperServicePic{
+        justify-content: center;
+    }
+    .alternatives,
+    .alternativesPic{
+        padding: 0;
+    }
+    .otherOptions{
+        width: 90%;
+    }
+    .chooseCloth{
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px){
+    .otherOptions{
+        flex-direction: column;
+        align-items: center;
+}
+    footer ul{
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    
+    footer li{
+        padding: 0 0 17px 0;
+    }
+    
+   
