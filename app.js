@@ -39,5 +39,5 @@ $(document).ready(function(){
   $('#q6').click(function(){
       $('#a6').show("slow");
   })
-});
-
+  
+ });
